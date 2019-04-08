@@ -1,7 +1,9 @@
 {
   "_version": "1.14.0",
   "sap.app": {
-    "applicationVersion": {"version": "0.0.0"},
+    "applicationVersion": {
+      "version": "0.0.0"
+    },
     "description": "{{appDescription}}",
     "i18n": "i18n/i18n.properties",
     "id": "sap.ui.demo.basicTemplate",
@@ -63,15 +65,16 @@
         {
           "name": "home",
           "pattern": "",
-          "target": ["home"]
+          "target": [
+            "home"
+          ]
         }
       ],
       "targets": {
         "home": {
           "viewId": "home",
           "viewLevel": 1,
-          "viewName": "Home",
-          "title": "{i18n>title}"
+          "viewName": "Home"
         }
       }
     }

@@ -9,12 +9,13 @@
 
     <script>window["sap-ui-config"] = {productive: true};</script>
 
+    <!--Standard Variant for Bootstrapping - Option 1 (Recommended)-->
     <script id="sap-ui-bootstrap"
             data-sap-ui-async="true"
             data-sap-ui-compatVersion="edge"
             data-sap-ui-frameOptions="trusted"
-            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
-            data-sap-ui-resourceroots='{"sap.ui.demo.basicTemplate": "./"}'
+            data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
+            data-sap-ui-resourceRoots='{"sap.ui.demo.basicTemplate": "./"}'
             data-sap-ui-theme="sap_belize_plus"
             data-sap-ui-xx-componentPreload="off"
             data-sap-ui-xx-waitForTheme="true"
@@ -23,10 +24,14 @@
 </head>
 
 <body class="sapUiBody">
-<!-- Enabled declarative component support -->
+<!-- Enabled declarative component support, optional declarative prefixes: data-id, data-settings-->
 <div
         data-name="sap.ui.demo.basicTemplate"
-        data-sap-ui-component>
+        data-sap-ui-component
+
+        data-id="rootComponentContainer"
+        data-settings='{"id" : "basicTemplate0"}'
+>
 </div>
 </body>
 </html>
